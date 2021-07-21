@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    background-color: aqua;
+    background-image: url('../image/wave.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    height: 50vh;
+}
+
+.title {
+    font-family: verdana;
+    flex-basis: 50%;
+}
+
+.title h2{
+    font-size: 1rem;
+}
+
+header img{
+    flex-basis: 50%;
+    max-width: min-content;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        font-size: 0.8rem;
+    }
+
+
+    header {
+        flex-direction: column-reverse;
+        font-size: 0.7rem;
+    }
+
+    .title {
+        flex-basis: 70%;
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+    }
+    header img {
+        max-width: 50%;
+        flex-basis: 30%;
+    }
+}
+
+
+@media (min-width: 1154px) {
+    header {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    header img{
+        position: relative;
+        right: 15%;
+    }
+}
