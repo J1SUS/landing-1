@@ -30,6 +30,7 @@ a {
 
 .title-navbar, .elements-navbar {
     display: flex;
+    transition: color 200ms ease-in-out;
     font-family: sans-serif;
 }
 
@@ -54,15 +55,9 @@ a {
 
 .elements-navbar *:hover{
     /* color: aliceblue; */
-    animation: text 600ms 2;
+    color: aliceblue;
 }
 
-@keyframes title {
-    from {color: rgb(6,3,59)}
-    to {color: rgb(67, 57, 255)}
-}
-
-@keyframes text {
-    from {color: black;}
-    to {color: aliceblue;}
+.title-navbar:hover {
+    color: rgb(67, 57, 255);
 }
