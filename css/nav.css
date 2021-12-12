@@ -39,17 +39,19 @@ a {
 }
 
 .gradient:hover {
-    animation: title 2s;
+    transition: color 200ms ease-in-out;
 }
 
 .title-navbar *{
     margin: 2px;
+    transition: color 200ms ease-in-out;
 }
 
 .elements-navbar *{
     margin: 5px;
     padding: 3px;
     border-radius: 10px;
+    transition: color 200ms ease-in-out;
     background-color: rgb(255, 129, 150);
 }
 
